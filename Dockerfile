@@ -1,6 +1,7 @@
 FROM node:20-alpine
 
-RUN apk add --no-cache ffmpeg wget
+RUN apk add --no-cache ffmpeg wget fontconfig ttf-freefont ttf-dejavu
+RUN fc-cache -f
 
 WORKDIR /app
 
